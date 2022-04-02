@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from 'styled-components';
+import {CardWrapper} from '../src/components/styles/container.styled.js';
+import Header from './components/header.js';
+import Card from './components/card.js';
+import GlobalStyles from './components/styles/Global.js';
+import theme from './components/styles/Theme.js';
+import data from './components/data';
 
 function App() {
+  const cardDetails = data.map(item => {
+    return <Card 
+    key={item.id}
+    item={item}
+  />
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme = {theme}>
+      <>
+        <GlobalStyles />
+          <Header />
+          <CardWrapper>
+            {cardDetails}
+          </CardWrapper>
+      </>
+    </ThemeProvider>
   );
 }
 
