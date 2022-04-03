@@ -60,6 +60,12 @@ p, li, a {
 h1, h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
 }
+
+@media (min-width: 64rem) {
+	p {
+		font-size: 1.125rem;
+	}
+}
 `;
 
 export default GlobalStyles;

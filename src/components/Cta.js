@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { PinkButton } from './styles/Button';
+import { PinkButton, PinkButtonCta } from './styles/Button';
 import { CtaWrapper, CtaStyled } from './styles/Cta.styled';
 
 export default function Cta () {
@@ -7,9 +7,9 @@ export default function Cta () {
         <CtaWrapper>
             <CtaStyled>
                 <h3>Ready To Build Your Community?</h3>
-                <PinkButton>Get Started For Free</PinkButton>
+                <PinkButtonCta>Get Started For Free</PinkButtonCta>
             </CtaStyled>
         </CtaWrapper>
-       
+    
     )
 }

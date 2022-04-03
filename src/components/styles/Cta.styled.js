@@ -19,4 +19,18 @@ export const CtaStyled = styled.div`
     gap: 1.5rem;
     border-radius: 15px;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
+
+    h3 {
+        font-size: 1.125rem;
+    }
+
+    @media (min-width: 64rem) {
+        gap: 3rem;
+        width: 50rem;
+        height: 17.5rem;
+
+        h3 {
+            font-size: 1.75rem;
+        }
+    }
 `

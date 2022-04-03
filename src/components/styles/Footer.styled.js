@@ -7,6 +7,11 @@ export const StyledFooter = styled.footer`
     flex-direction: column;
     gap: 1rem;
     color: white;
+
+    @media (min-width: 64rem) {
+        flex-direction: row;
+        gap: 8.125rem;
+    }
 `
 
 export const ContactWrapper = styled.div`

@@ -6,6 +6,10 @@ export const StyledHeader = styled.header`
     padding: 1.688rem 1rem 2.313rem 1rem;
     font-size: 10px;
     font-weight: 700;
+
+    @media (min-width: 64rem) {
+        padding: 4.813rem 5.625rem 4.5rem 5rem;
+    }
 `
 
 export const Nav = styled.nav`
@@ -17,6 +21,10 @@ export const Nav = styled.nav`
 
 export const Logo = styled.img`
     width: 6.5rem;
+
+    @media (min-width: 64rem) {
+        width: 12.5rem;
+    }
 `
 
 export const Hero = styled.div`
@@ -24,7 +32,13 @@ export const Hero = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     gap: 3rem;
+
+    @media (min-width: 64rem) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
 `
 
 export const HeroContent = styled.div`
@@ -33,6 +47,7 @@ export const HeroContent = styled.div`
     align-items: center;
     gap: 2rem;
     text-align: center;
+
     h1 {
         font-size: 1.5rem;
     }
@@ -41,8 +56,24 @@ export const HeroContent = styled.div`
         font-size: 1rem;
         line-height: 1.5rem;
     }
+
+    @media (min-width: 64rem) {
+        max-width: 33.5rem;
+        align-items: flex-start;
+        text-align: left;
+        margin-top: 9rem;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+    
 `
 
 export const Img = styled.img`
     max-width: 18.5rem;
+
+    @media (min-width: 64rem) {
+        max-width: 42.5rem;
+    }
 `
