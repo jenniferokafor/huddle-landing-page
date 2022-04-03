@@ -5,6 +5,8 @@ import Card from './components/card.js';
 import GlobalStyles from './components/styles/Global.js';
 import theme from './components/styles/Theme.js';
 import data from './components/data';
+import Cta from './components/Cta.js';
+import Footer from './components/footer.js';
 
 function App() {
   const cardDetails = data.map(item => {
@@ -22,6 +24,8 @@ function App() {
           <CardWrapper>
             {cardDetails}
           </CardWrapper>
+          <Cta />
+          <Footer />
       </>
     </ThemeProvider>
   );

@@ -51,8 +51,9 @@ table {
 	border-spacing: 0;
 }
 
-p, ul {
+p, li, a {
     font-family: 'Open Sans', sans-serif;
+	line-height: 1.5rem;
 	font-weight: 400;
 }
 
