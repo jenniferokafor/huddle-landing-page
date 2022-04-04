@@ -7,7 +7,7 @@ export default function Cta () {
         <CtaWrapper>
             <CtaStyled>
                 <h3>Ready To Build Your Community?</h3>
-                <PinkButtonCta>Get Started For Free</PinkButtonCta>
+                <PinkButtonCta type='button'>Get Started For Free</PinkButtonCta>
             </CtaStyled>
         </CtaWrapper>
     

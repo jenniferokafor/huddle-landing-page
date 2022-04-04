@@ -8,18 +8,18 @@ export default function Header () {
         <StyledHeader>
             <Nav>
                 <Logo src={logo} />
-                <Button>Try It Free</Button>
+                <Button type='button'>Try It Free</Button>
             </Nav>
 
             <Hero>
                 <HeroContent>
                     <h1>Build The Community Your Fans Will Love</h1>
                     <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion. </p>
-                    <PinkButtonHeader>Get Started for Free </PinkButtonHeader>
+                    <PinkButtonHeader type='button'>Get Started for Free </PinkButtonHeader>
                 </HeroContent>
 
                 <Img src={heroImg}/>
             </Hero>
         </StyledHeader>
     )
-}
+} 

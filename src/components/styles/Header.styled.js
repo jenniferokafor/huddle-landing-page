@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-// import heroImg from '../assets/images/bg-hero-mobile.svg';
+import background from '../../assets/images/bg-hero-desktop.svg';
 
 export const StyledHeader = styled.header`
-    background-color: ${({theme}) => theme.colors.lightBlue};
+background-color: ${({theme}) => theme.colors.lightBlue};
     padding: 1.688rem 1rem 2.313rem 1rem;
     font-size: 10px;
     font-weight: 700;

@@ -6,4 +6,8 @@ export const CardWrapper = styled.div`
     flex-direction: column;
     gap: 1rem;
 
-`;
+    @media (min-width: 64rem) {
+        margin: 10rem 6.5rem;
+        gap: 2.5rem;
+    }
+`; 
